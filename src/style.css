@@ -22,6 +22,10 @@
   height: 600px;
 }
 
+#projects {
+  height: 600px;
+}
+
 .section {
   display: flex;
   justify-content: center;

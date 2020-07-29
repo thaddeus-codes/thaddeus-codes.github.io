@@ -11,7 +11,7 @@ export default function NavBar() {
         <Nav className="ml-auto">
           <Nav.Link href="#about-me">About Me</Nav.Link>
           <Nav.Link href="#projects">Projects</Nav.Link>
-          <Nav.Link href="#contact">Contact</Nav.Link>
+          <Nav.Link href="#contact">Contact Me</Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
