@@ -7,6 +7,7 @@
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
+  z-index: 2;
 }
 
 .nav {
@@ -14,7 +15,7 @@
   justify-items: right;
 }
 
-#about-me {
+/* #about-me {
   height: 600px;
 }
 
@@ -24,9 +25,58 @@
 
 #projects {
   height: 600px;
-}
+} */
 
 .section {
   display: flex;
-  justify-content: center;
+  position: relative;
+  align-items: flex-start;
+  height: 1000px;
+}
+
+.section-header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 55px;
+  background-color: white;
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+  margin-top: 0;
+}
+
+#sunny {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+#about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#about-me-div {
+  display:flex;
+  flex-direction: row;
+}
+
+#rainy {
+  display: grid;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#about-me-image {
+  width: 50%;
+  height: 50%;
+  display: flex;
+}
+
+#about-me-div {
+  width: 50%;
+  display: flex;
 }
