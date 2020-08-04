@@ -22,6 +22,65 @@
   height: inherit;
 }
 
+.menu-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  outline: none;
+}
+
+button {
+  outline: none;
+}
+
+.menu-btn__burger {
+  width: 30px;
+  height: 4px;
+  border-radius: 5px;
+  /* box-shadow: 0 2px 5px rgba(255, 101, 47, 2); */
+  transition: all 0.5s ease-in-out;
+  background-color: #ffc2eb;
+  outline: none;
+}
+
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  border-radius: 5px;
+  /* box-shadow: 0 2px 5px rgba(255, 101, 47, 2); */
+  transition: all 0.5s ease-in-out;
+  background-color: #ebfff4;
+}
+
+.menu-btn__burger::before {
+  transform: translateY(12px) translateX(-15px);
+}
+
+.menu-btn__burger::after {
+  transform: translateY(-12px) translateX(-15px);
+}
+
+.menu-btn.open .menu-btn__burger {
+  /* transform: translateX(-100px); */
+  background: transparent;
+}
+
+.menu-btn.open .menu-btn__burger::before {
+  transform: translateX(-15px) rotate(45deg);
+}
+
+.menu-btn.menu-btn.open .menu-btn__burger::after {
+  transform: translateX(-15px) rotate(-45deg);
+}
+
 #navbar {
   position: -webkit-sticky; /* Safari */
   position: sticky;
