@@ -1,6 +1,24 @@
 #header {
   width: 100%;
-  height: 600px;
+  height: 500px;
+  background-image: url('../public/giphy.gif');
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#header-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 500px;
+  background-color:  rgba(204, 255, 227, 0.3);
+  backdrop-filter: blur(8px);
+  z-index: 1;
 }
 
 #navbar {
@@ -8,11 +26,13 @@
   position: sticky;
   top: 0;
   z-index: 2;
+  background-color: #48351E;
+  color: #A6E6CD
+
 }
 
-.nav {
-  display: flex;
-  justify-items: right;
+.navbar-light .navbar-nav .nav-link {
+  color: #A6E6CD;
 }
 
 /* #about-me {
@@ -56,27 +76,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 1500px;
 }
 
-#about-me-div {
+/* #about-me-div {
   display:flex;
   flex-direction: row;
-}
+  width: 100%;
+} */
 
-#rainy {
-  display: grid;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
+/* .about-me-text {
+  width: 50%;
+} */
 
 #about-me-image {
-  width: 50%;
-  height: 50%;
-  display: flex;
-}
-
-#about-me-div {
-  width: 50%;
-  display: flex;
+  float: left;
+  height: 700px;
+  width: 400px;
+  padding: 25px;
 }

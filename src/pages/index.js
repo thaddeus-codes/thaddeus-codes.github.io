@@ -10,7 +10,14 @@ import "../style.css"
 export default function Home() {
   return (
     <div>
-      <div id="header"></div>
+      <div id='header'>
+
+      {/* <img id="header" src='giphy.gif' alt='placeholder for header'></img> */}
+      <div id='header-text'>
+
+      <h1>Let's get started!</h1>
+      </div>
+      </div>
       <NavBar />
       <AboutMe/>
       <Projects/>
