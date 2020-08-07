@@ -4,9 +4,9 @@ import Nav from "react-bootstrap/Nav"
 
 export default function NavBar() {
   let menuOpen = false
-  const menuBtn = document.querySelector(".menu-btn")
-
+  
   const animateBurger = function () {
+    const menuBtn = document.querySelector(".menu-btn")
     if (!menuOpen && menuBtn) {
       menuBtn.classList.add("open")
       menuOpen = true
@@ -14,6 +14,7 @@ export default function NavBar() {
       menuBtn.classList.remove("open")
       menuOpen = false
     }
+    console.log(menuBtn)
   }
 
   return (
