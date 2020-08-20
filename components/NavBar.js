@@ -14,7 +14,6 @@ export default function NavBar() {
       menuBtn.classList.remove("open")
       menuOpen = false
     }
-    console.log(menuBtn)
   }
 
   return (
@@ -29,14 +28,17 @@ export default function NavBar() {
         </div>
       </Navbar.Toggle>
       <Navbar.Collapse id="responsive-navbar-nav">
-        <Nav className="ml-auto">
-          <Nav.Link href="#about-me" to="#about-me">
+        <Nav className="ml-auto" >
+          <Nav.Link href="#about-me" to="#about-me" onClick={animateBurger}>
             About Me
           </Nav.Link>
-          <Nav.Link href="#projects" to="#projects">
+          <Nav.Link href='#skills' to='#skills' onClick={animateBurger}>
+            Skills
+          </Nav.Link>
+          <Nav.Link href="#projects" to="#projects" onClick={animateBurger}>
             Projects
           </Nav.Link>
-          <Nav.Link href="#contact-me" to="#contact-me">
+          <Nav.Link href="#contact-me" to="#contact-me" onClick={animateBurger}>
             Contact Me
           </Nav.Link>
         </Nav>

@@ -17,7 +17,8 @@ export default function Home() {
       </Helmet>
       <div id="header">
         <div id="header-text">
-          <h1>Let's get started!</h1>
+          <h1 className='header-content'>Hi, I'm Thaddeus <br/> and I'm a Chicago based software engineer and developer.</h1>
+          <img className='header-content' src='/images/profile.jpg' alt='profile pic' id='profile-pic'/>
         </div>
       </div>
       <NavBar />

@@ -1,10 +1,17 @@
 /* https://coolors.co/ffc2eb-cbffd0-88eeaa-93d4b8-a38a64-7b5a33 */
 
 body {
-  padding-left: 5vh;
-  padding-right: 5vh;
-  font-size: 1.5rem;
+  font-size: 1rem;
   background-color: #816036;
+  margin-right: 10vw;
+  margin-left: 10vw;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 
 h1 {
@@ -14,7 +21,7 @@ h1 {
 #header {
   width: 100%;
   height: 50vh;
-  background: url("/images/giphy.gif") no-repeat center center fixed;
+  background: url("/images/coding.gif") no-repeat center center fixed;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -24,13 +31,26 @@ h1 {
 
 #header-text {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-color: rgba(235, 255, 244, 0.4);
-  backdrop-filter: blur(10px);
+  background-color: rgba(235, 255, 244, 0.2);
+  backdrop-filter: blur(3px);
   z-index: 1;
   height: inherit;
+  color:  #ebfff4
+}
+
+#profile-pic {
+  transform: rotate(90deg);
+  width: 40vh;
+  border: 3px solid #ffc2eb;
+  border-radius: 50px;
+}
+
+.header-content {
+  margin: 20px;
+
 }
 
 .menu-btn {
@@ -42,12 +62,15 @@ h1 {
   height: 30px;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
-  outline: none;
+}
+
+.navbar-toggler {
+  padding: .25rem;
 }
 
 .menu-btn__burger {
-  width: 30px;
-  height: 4px;
+  width: 100%;
+  height: 5px;
   border-radius: 5px;
   /* box-shadow: 0 2px 5px rgba(255, 101, 47, 2); */
   transition: all 0.5s ease-in-out;
@@ -55,12 +78,14 @@ h1 {
   outline: none;
 }
 
+
+
 .menu-btn__burger::before,
 .menu-btn__burger::after {
   content: "";
   position: absolute;
-  width: 30px;
-  height: 4px;
+  width: 100%;
+  height: 5px;
   border-radius: 5px;
   /* box-shadow: 0 2px 5px rgba(255, 101, 47, 2); */
   transition: all 0.5s ease-in-out;
@@ -68,11 +93,11 @@ h1 {
 }
 
 .menu-btn__burger::before {
-  transform: translateY(12px) translateX(-15px);
+  transform: translateY(12px) translateX(-50%);
 }
 
 .menu-btn__burger::after {
-  transform: translateY(-12px) translateX(-15px);
+  transform: translateY(-12px) translateX(-50%);
 }
 
 .menu-btn.open .menu-btn__burger {
@@ -91,7 +116,7 @@ h1 {
 #navbar {
   position: -webkit-sticky; /* Safari */
   position: sticky;
-  z-index: 2;
+  z-index: 100;
   background-color: #48351e;
   box-sizing: border-box;
   top: -1px;
@@ -99,6 +124,7 @@ h1 {
 
 .navbar-light .navbar-nav .nav-link {
   color: #ebfff4;
+  font-weight: bold
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
@@ -110,11 +136,13 @@ h1 {
 .navbar-light .navbar-brand.active {
   color: #ffc2eb;
   font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .navbar-light .navbar-brand:hover {
   color: #ff99dd;
   font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .section {
@@ -129,7 +157,7 @@ h1 {
 .section-header {
   position: -webkit-sticky;
   position: sticky;
-  top: 7vh;
+  top: 61px;
   background-color: #a38a64;
   color: #ebfff4;
   /* background-color: #ebfff4;
@@ -147,7 +175,7 @@ h1 {
   height: auto;
   background-color: #654a2a;
   color: #ebfff4;
-  padding: 5%;
+  padding: 5% 10%;
 }
 
 #about-me {
@@ -157,10 +185,63 @@ h1 {
   height: auto;
 }
 
-#about-me-image {
-  float: left;
-  max-width: 20%;
-  height: auto;
-  /* padding: 2%; */
-  margin-right: 3%;
+#skills-content {
+  display: grid;
+  grid: 30% 30% 30% / 30% 30% 30%;
+  grid-gap: 4.5%;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
 }
+
+#skills-content img {
+  max-width: 20vw;
+  height: auto;
+}
+
+img#javascript {
+  max-width: 20vw;
+}
+
+img#firebase, img#redux {
+  max-width: 15vw;
+}
+
+
+#projects-carousel {
+  justify-content: center;
+  align-items: center;
+  max-width: 50vw;
+}
+
+@media screen and (min-width: 800px) {
+
+  #projects-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #projects-carousel {
+    width: 50vw
+  }
+}
+
+#contact-me {
+  bottom: 0;
+  width: 100%;
+  padding: 5px;
+  height: 75px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-image {
+  width: 35px;
+  margin-right: 8px;
+}
+
+
