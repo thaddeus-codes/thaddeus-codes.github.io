@@ -1,17 +1,15 @@
 /* https://coolors.co/ffc2eb-cbffd0-88eeaa-93d4b8-a38a64-7b5a33 */
 
 body {
-  font-size: 1rem;
   background-color: #816036;
   margin-right: 10vw;
   margin-left: 10vw;
+  font-size: 1.5rem;
 }
 
-@media screen and (max-width: 800px) {
-  body {
-    margin-right: 0;
-    margin-left: 0;
-  }
+
+p {
+  font-size: 1.5rem;
 }
 
 h1 {
@@ -42,7 +40,6 @@ h1 {
 }
 
 #profile-pic {
-  transform: rotate(90deg);
   width: 40vh;
   border: 3px solid #ffc2eb;
   border-radius: 50px;
@@ -50,7 +47,7 @@ h1 {
 
 .header-content {
   margin: 20px;
-
+  
 }
 
 .menu-btn {
@@ -211,7 +208,6 @@ img#firebase, img#redux {
 #projects-carousel {
   justify-content: center;
   align-items: center;
-  max-width: 50vw;
 }
 
 @media screen and (min-width: 800px) {
@@ -224,6 +220,15 @@ img#firebase, img#redux {
 
   #projects-carousel {
     width: 50vw
+  }
+}
+
+@media screen and (min-width: 800px) {
+  
+  #projects-content.section-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -244,4 +249,25 @@ img#firebase, img#redux {
   margin-right: 8px;
 }
 
+@media screen and (max-width: 800px) {
+  body {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  #header {
+    height: 50vh;
+
+  }
+
+  #header-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #profile-pic {
+    width: 80vw;
+    transform: rotate(0)
+  }
+}
 
