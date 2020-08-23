@@ -18,7 +18,7 @@ export default function Projects() {
           <Carousel.Item>
             <a href='https://github.com/thaddeus-codes/kanji-flashcards'>
             <img src='/images/Kanji-flashcards.gif' alt='kanji flashcards' className='d-block w-100'/>
-            <Carousel.Caption><h1>Kanji Flashcards</h1>
+            <Carousel.Caption><h1 style={{color: 'black'}}>Kanji Flashcards</h1>
             </Carousel.Caption>
             </a>
           </Carousel.Item>
