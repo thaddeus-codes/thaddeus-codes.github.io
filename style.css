@@ -1,0 +1,273 @@
+/* https://coolors.co/ffc2eb-cbffd0-88eeaa-93d4b8-a38a64-7b5a33 */
+
+body {
+  background-color: #816036;
+  margin-right: 10vw;
+  margin-left: 10vw;
+  font-size: 1.5rem;
+}
+
+
+p {
+  font-size: 1.5rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+#header {
+  width: 100%;
+  height: 50vh;
+  background: url("/images/coding.gif") no-repeat center center fixed;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#header-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(235, 255, 244, 0.2);
+  backdrop-filter: blur(3px);
+  z-index: 1;
+  height: inherit;
+  color:  #ebfff4
+}
+
+#profile-pic {
+  width: 40vh;
+  border: 3px solid #ffc2eb;
+  border-radius: 50px;
+}
+
+.header-content {
+  margin: 20px;
+  
+}
+
+.menu-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.navbar-toggler {
+  padding: .25rem;
+}
+
+.menu-btn__burger {
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  /* box-shadow: 0 2px 5px rgba(255, 101, 47, 2); */
+  transition: all 0.5s ease-in-out;
+  background-color: #ffc2eb;
+  outline: none;
+}
+
+
+
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  /* box-shadow: 0 2px 5px rgba(255, 101, 47, 2); */
+  transition: all 0.5s ease-in-out;
+  background-color: #ebfff4;
+}
+
+.menu-btn__burger::before {
+  transform: translateY(12px) translateX(-50%);
+}
+
+.menu-btn__burger::after {
+  transform: translateY(-12px) translateX(-50%);
+}
+
+.menu-btn.open .menu-btn__burger {
+  /* transform: translateX(-100px); */
+  background: transparent;
+}
+
+.menu-btn.open .menu-btn__burger::before {
+  transform: translateX(-15px) rotate(45deg);
+}
+
+.menu-btn.menu-btn.open .menu-btn__burger::after {
+  transform: translateX(-15px) rotate(-45deg);
+}
+
+#navbar {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  z-index: 100;
+  background-color: #48351e;
+  box-sizing: border-box;
+  top: -1px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #ebfff4;
+  font-weight: bold
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+  color: #ccffe3;
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .navbar-brand.active {
+  color: #ffc2eb;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-light .navbar-brand:hover {
+  color: #ff99dd;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: flex-start;
+  width: 100%;
+  height: auto;
+}
+
+.section-header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 61px;
+  background-color: #a38a64;
+  color: #ebfff4;
+  /* background-color: #ebfff4;
+  color: #a38a64; */
+  z-index: 1;
+  width: 100%;
+  height: auto;
+  text-align: left;
+  margin: 0;
+  padding: 2vh;
+}
+
+.section-content {
+  width: 100%;
+  height: auto;
+  background-color: #654a2a;
+  color: #ebfff4;
+  padding: 5% 10%;
+}
+
+#about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+}
+
+#skills-content {
+  display: grid;
+  grid: 30% 30% 30% / 30% 30% 30%;
+  grid-gap: 4.5%;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+}
+
+#skills-content img {
+  max-width: 20vw;
+  height: auto;
+}
+
+img#javascript {
+  max-width: 20vw;
+}
+
+img#firebase, img#redux {
+  max-width: 15vw;
+}
+
+
+#projects-carousel {
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 800px) {
+
+  #projects-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #projects-carousel {
+    width: 50vw
+  }
+}
+
+@media screen and (min-width: 800px) {
+  
+  #projects-content.section-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+#contact-me {
+  bottom: 0;
+  width: 100%;
+  padding: 5px;
+  height: 75px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-image {
+  width: 35px;
+  margin-right: 8px;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  #header {
+    height: 50vh;
+
+  }
+
+  #header-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #profile-pic {
+    width: 80vw;
+    transform: rotate(0)
+  }
+}
+
