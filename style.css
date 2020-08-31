@@ -211,7 +211,6 @@ img#firebase, img#redux {
 }
 
 @media screen and (min-width: 800px) {
-
   #projects-content {
     display: flex;
     align-items: center;
@@ -221,10 +220,6 @@ img#firebase, img#redux {
   #projects-carousel {
     width: 50vw
   }
-}
-
-@media screen and (min-width: 800px) {
-  
   #projects-content.section-content {
     display: flex;
     justify-content: center;
@@ -256,8 +251,14 @@ img#firebase, img#redux {
   }
 
   #header {
-    height: 50vh;
+    height: 100%;
 
+  }
+
+  #profile-pic {
+    height: 100%;
+    width: auto;
+    border-radius: 50px;
   }
 
   #header-text {
